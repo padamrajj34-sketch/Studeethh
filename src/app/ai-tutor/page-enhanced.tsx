@@ -441,7 +441,7 @@ export default function AITutorPage() {
                       <div className="flex-1">
                         <div className="flex items-center mb-2">
                           <span className="text-lg font-semibold text-blue-600 mr-2">Q{index + 1}</span>
-                          <span className={`text-xs px-2 py-1 rounded-full ${difficultyColors[q.difficulty]}`}>
+                          <span className={`text-xs px-2 py-1 rounded-full ${difficultyColors[q.difficulty as keyof typeof difficultyColors]}`}>
                             {q.difficulty}
                           </span>
                         </div>
